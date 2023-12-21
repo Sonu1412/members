@@ -42,7 +42,7 @@ def append_to_word(doc, data, filename):
         hdr_cells[col_index].paragraphs[0].alignment = 1
         hdr_cells[col_index].paragraphs[0].runs[0].bold = True
 
-    for row in data:
+    for row in data[0:]:
         row_cells = table.add_row().cells
         for col_index, cell in enumerate(row[:5]):  # Only first five columns
             row_cells[col_index].text = str(cell)
