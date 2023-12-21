@@ -73,7 +73,7 @@ def filter_and_append(csv_file_path, words_list):
 def main():
     st.title('CSV Data Processing')
 
-    csv_file_path = r'C:\Users\Aryadev\OneDrive\Desktop\yadav sangh\new2.csv'
+    csv_file_path = 'https://github.com/Sonu1412/members/raw/main/new2.csv'
 
     # Check if the CSV file exists
     if not os.path.exists(csv_file_path):
