@@ -42,6 +42,8 @@ def main():
 
     user_input1 = st.text_input('Enter First Name:')
     user_input2 = st.text_input('Enter Father Name:')
+    user_input1 = user_input1.lower()
+    user_input2 = user_input2.lower()
 
     if st.button('Filter Data'):
         both_present, only_input1, only_input2 = filter_and_categorize(csv_file_path, user_input1, user_input2)
