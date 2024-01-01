@@ -40,8 +40,8 @@ def main():
 
     csv_file_path = 'new2.csv'
 
-    user_input1 = st.text_input('Enter First Input:')
-    user_input2 = st.text_input('Enter Second Input:')
+    user_input1 = st.text_input('Enter First Name:')
+    user_input2 = st.text_input('Enter Father Name:')
 
     if st.button('Filter Data'):
         both_present, only_input1, only_input2 = filter_and_categorize(csv_file_path, user_input1, user_input2)
